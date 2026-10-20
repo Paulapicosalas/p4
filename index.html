@@ -1,12 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coachella</title>
-    <link rel="stylesheet" href="link rel="preconnect href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">">
-  <style>     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
 * {
     box-sizing: border-box;
     padding: 0;
@@ -38,7 +41,7 @@ ul li {
 
 body {
     width: 100%;
-    background-color: var(--bg-color);
+    background: linear-gradient(135deg, var(--primary), var(--bg-color), var(--secondary-color));
     text-align: center;
     font-family: var(--font-text);
     font-size: 16px;
@@ -46,16 +49,16 @@ body {
 }
 
 header {
-    background-color: var(--primary);
+    background-color: transparent;
     text-align: center;
     width: 100%;
     min-height: 20vh;
-    padding: 1em;
+    padding: 1.5em 2em;
 }
 
 header h1 {
     font-family: var(--font-title);
-    font-size: 3em;
+    font-size: 5em;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -68,13 +71,13 @@ header h2 {
 }
 
 main {
-    background-color: var(--bg-color);
+    background-color: transparent;
     text-align: center;
     width: 100%;
     min-height: 60vh;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 section {
@@ -82,50 +85,75 @@ section {
 }
 
 section h3 {
-    text-align: center;
+    display: inline-block;
     font-family: var(--font-text);
     font-size: 0.8em;
-    margin: 0.5em auto;
+    margin: 0.5em 0;
+    padding: 0.4em 1.5em;
+    background-color: var(--secondary-color);
 }
 
-section h3:first-child {
-    background-color: var(--secondary-color);
-    text-align: center;
+main section:first-child {
+    text-align: left;
 }
-section h3:nth-child(2) {
-    background-color: var(--secondary-color);
-    text-align: center;
+
+main section:nth-child(2) {
+    text-align: right;
 }
-section h3:nth-child(3) {
-    background-color: var(--secondary-color);
-    text-align: center;
+
+main section:nth-child(3) {
+    text-align: left;
+}
+
+main section:first-child h3 {
+    text-align: right;
+}
+
+main section:nth-child(2) h3 {
+    text-align: left;
+}
+
+main section:nth-child(3) h3 {
+    text-align: right;
 }
 
 section ul {
-    text-align: center;
+    text-align: left;
 }
 
 section ul li {
     display: inline-block;
     font-family: var(--font-text);
-    font-size: 0.7em;
-    line-height: 1.4;
+    font-size: 0.85em;
+    line-height: 1.5;
 }
 
 section ul li:first-child {
     font-weight: 900;
 }
 
+main section:first-child ul {
+    text-align: left;
+}
+
+main section:nth-child(2) ul {
+    text-align: right;
+}
+
+main section:nth-child(3) ul {
+    text-align: left;
+}
+
 section:nth-of-type(4) h1 {
     font-family: var(--font-title);
-    font-size: 2em;
+    font-size: 3em;
 }
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: transparent;
     width: 100%;
     min-height: 20vh;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 footer h3 {
@@ -135,7 +163,7 @@ footer h3 {
 
 footer p {
     font-family: var(--font-text);
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 900;
 }
 
@@ -143,31 +171,21 @@ footer ul li {
     display: inline-block;
     font-size: 0.7em;
 }
-main section:first-child ul {
-    text-align: left;
-    }
-
-main section:nth-child(2) ul {
-    text-align: right;
-    }
-main section:nth-child(3) ul {
-     text-align: left;
-    }
-       
     </style>
 </head>
+
 <body>
-    <header class="fraunces-cos"> 
+    <header class="fraunces-cos">
         <hgroup>
             <h1>Coachella</h1>
             <h2>Coachella Valley Music and Arts Festival</h2>
         </hgroup>
     </header>
+
     <main>
         <section>
-            <h3> <time datetime="2026-04-15">Friday April 15 & 22</time></h3>
+            <h3><time datetime="2026-04-15">Friday April 15 & 22</time></h3>
             <ul>
-                <li>Harry Styles</li>
                 <li>Harry Styles</li>
                 <li>Lil Baby</li>
                 <li>Daniel Caesar</li>
@@ -229,13 +247,13 @@ main section:nth-child(3) ul {
                 <li>SOHMI</li>
                 <li>MEUTE</li>
                 <li>DJ Lord</li>
-                <li>Dear Humans</li> 
+                <li>Dear Humans</li>
             </ul>
         </section>
+
         <section>
-            <h3><time datetime="2026-04-15">Sunday April 16 & 23</time></h3>
+            <h3><time datetime="2026-04-16">Saturday April 16 & 23</time></h3>
             <ul>
-                <li>Billie Eilish</li>
                 <li>Billie Eilish</li>
                 <li>Flume</li>
                 <li>Megan Thee Stallion</li>
@@ -290,8 +308,9 @@ main section:nth-child(3) ul {
                 <li>Layla Benitez</li>
             </ul>
         </section>
+
         <section>
-            <h3><time datetime="2026-04-15">Sunday April 17 & 24</time></h3>
+            <h3><time datetime="2026-04-17">Sunday April 17 & 24</time></h3>
             <ul>
                 <li>Ye</li>
                 <li>Doja Cat</li>
@@ -351,29 +370,33 @@ main section:nth-child(3) ul {
                 <li>Cole Knight</li>
             </ul>
         </section>
+
         <section>
             <h3>Returning to the Desert</h3>
-            <h1>Swedish House Mafia</h3>
+            <h1>Swedish House Mafia</h1>
         </section>
     </main>
+
     <footer>
-        <h3>featuring</h3>
+        <h3>Featuring</h3>
         <p>88rising's HEAD IN THE CLOUDS FOREVER</p>
         <section>
-        <h3>Large-scale art installations by</h3>
-        <ul>
-            <li>Architensions</li>
-            <li>Christopher Cichocki</li>
-            <li>Kiki Van Ejik</li>
-            <li>Los Dos</li>
-            <li>Estudio Normal</li>
-            <li>Oana Stanescu</li>
-            <li>NEWSUBSTANCE</li>
-            <li>Do LaB</li>
-            <Li>Robert Bose</Li>
-        </ul>
-    </section>
+            <h3>Large-scale art installations by</h3>
+            <ul>
+                <li>Architensions</li>
+                <li>Christopher Cichocki</li>
+                <li>Kiki Van Ejik</li>
+                <li>Los Dos</li>
+                <li>Estudio Normal</li>
+                <li>Oana Stanescu</li>
+                <li>NEWSUBSTANCE</li>
+                <li>Do LaB</li>
+                <li>Robert Bose</li>
+            </ul>
+        </section>
     </footer>
+
+    <a href="https://www.binaural.es/wp-content/uploads/2022/01/unnamed-7.webp">Cartel Coachella</a>
+
 </body>
-<a href="https://www.binaural.es/wp-content/uploads/2022/01/unnamed-7.webp">Cartel Coachella</a>
 </html>
